@@ -1,0 +1,278 @@
+%% 
+%% Copyright 2019-2020 Elsevier Ltd
+%% 
+%% This file is part of the 'CAS Bundle'.
+%% --------------------------------------
+%% 
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%% 
+%% The list of all files belonging to the 'CAS Bundle' is
+%% given in the file `manifest.txt'.
+%% 
+%% Template article for cas-dc documentclass for 
+%% double column output.
+
+%\documentclass[a4paper,fleqn,longmktitle]{cas-dc}
+\documentclass[a4paper,fleqn]{cas-dc}
+
+%\usepackage[authoryear,longnamesfirst]{natbib}
+%\usepackage[authoryear]{natbib}
+\usepackage[numbers]{natbib}
+
+%%%Author definitions
+\def\tsc#1{\csdef{#1}{\textsc{\lowercase{#1}}\xspace}}
+\tsc{WGM}
+\tsc{QE}
+\tsc{EP}
+\tsc{PMS}
+\tsc{BEC}
+\tsc{DE}
+%%%
+
+\begin{document}
+\let\WriteBookmarks\relax
+\def\floatpagepagefraction{1}
+\def\textpagefraction{.001}
+\shorttitle{Leveraging social media news}
+\shortauthors{Lindh and Lemenkova}
+
+\title[mode = title]{Evaluation of different binder combinations for s/s treatment of TBT contaminated sediments}                      
+%\tnotemark[1]
+
+%\tnotetext[1]{This document is the results of the research project funded by the}
+
+
+
+\author[1]{Per A. Lindh}[type=editor,
+                        auid=000,bioid=1,
+                     %   prefix=Dr.,
+                     %   role=Researcher,
+                        orcid=0000-0000-0000-0000]
+\cormark[1]
+\fnmark[1]
+\ead{per.a.lindh@gmail.com}
+%\ead[url]{www.cvr.cc, cvr@sayahna.org}
+
+%\credit{Conceptualization of this study, Methodology, Software}
+
+\address[1]{Swedish Transport Administration. Lund, Sweden}
+
+\author[2]{Polina Lemenkova}[
+	orcid=0000-0002-5759-1089]
+
+\cormark[2]
+\fnmark[2]
+\ead{pauline.lemenkova@gmail.com}
+%\ead[URL]{www.sayahna.org}
+
+\credit{Data curation, Writing - Original draft preparation}
+
+\address[2]{Schmidt Institute of Physics of the Earth, Russian Academy of Sciences. Department of Natural Disasters, Anthropogenic Hazards and Seismicity of the Earth. Laboratory of Regional Geophysics and Natural Disasters. Bolshaya Gruzinskaya St, 10/1, Moscow, 123995, Russia}
+
+\cortext[cor1]{Principal corresponding author}
+\cortext[cor2]{Corresponding author}
+%\fntext[fn1]{This is the first author footnote. but is common to third
+%  author as well.}
+%\fntext[fn2]{Another author footnote, this is a very long footnote and
+  %it should be a really long footnote. But this footnote is not yet
+  %sufficiently long enough to make two lines of footnote text.}
+
+%\nonumnote{This note has no numbers. In this work we demonstrate $a_b$
+  %the formation Y\_1 of a new type of polariton on the interface
+  %between a cuprous oxide slab and a polystyrene micro-sphere placed
+  %on the slab.
+  %}
+
+\begin{abstract}
+On behalf of Cementa and Cowi, Swedish Geotechnical Institute (SGI) has evaluated the effect of the material technical and environmental technical properties of three different binder components. The project has a connection to the Arendal project. In the pilot trials before Arendal 2, two different recipes were evaluated, of which one recipe gave the best results. This recipe was cement and slag (GGBFS) in the proportions 50/50 and a total amount of admixture of 150 kg/m3 dredged material. Based on these results, an experiment was designed to study the effect of mixing in cement kiln dust (CKD) in order to utilise a residual product in this way while reducing the need for cement and slag. Methodology includes the geotechnical measurements, statistical processing of data and graphical visualisation of plots. The overall hypothesis is that it is possible to replace a part of cement or slag with cement kiln dust (CKD) without significantly deteriorating the results.
+\end{abstract}
+
+%\begin{graphicalabstract}
+%\includegraphics{figs/grabs.pdf}
+%\end{graphicalabstract}
+
+%\begin{highlights}
+%\item Research highlights item 1
+%\item Research highlights item 2
+%\item Research highlights item 3
+%\end{highlights}
+
+\begin{keywords}
+cement \sep cement kiln dust (CKD) \sep slag \sep technical properties \sep binder components
+\end{keywords}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+
+\cite{ABDELGAWWAD2021102479}, \cite{SUTCU2016185}, \cite{WANG2020103489}, \cite{BAGHERI2020101809}, \cite{BERNAL2010898}, 
+\cite{PEETHAMPARAN2008803}, \cite{CHAUNSALI2011197}, \cite{FAISAL2021105194}, \cite{YASERI2019592}, \cite{SHOAIB2000371}, 
+\cite{Taha}, \cite{BAGHRICHE2020e00386}, \cite{RIBEIRO20093094}, \cite{SILVA2015108}, \cite{VIANI201456}, \cite{LI2017459},
+\cite{ABDELGAWWAD20191218}, \cite{NOSJEAN202031}, \cite{SHAH2021}, \cite{ZAHRAN202094}, \cite{ADEYANJU2020e00388}, \cite{SUN2021123255},
+\cite{SAMI2021106357}, \cite{SHEN2020103571}, \cite{ZHANG2021128926}, \cite{RIMAL2019e00223}, \cite{FIERTAK2013278}
+
+
+\subsection{Background}
+
+\subsection{Research aim}
+On behalf of Cementa and Cowi, Swedish Geotechnical Institute (SGI) has evaluated the effect of the material technical and environmental technical properties of three different binder components. The project has a connection to the Arendal project. In the pilot trials before Arendal 2, two different recipes were evaluated, of which one recipe gave the best results. This recipe was cement and slag (GGBFS) in the proportions 50/50 and a total amount of admixture of $150 kg/m^3$ dredged material. Based on these results, an experiment was designed to study the effect of mixing in cement kiln dust (CKD) in order to utilise a residual product in this way while reducing the need for cement and slag. Methodology includes the geotechnical measurements, statistical processing of data and graphical visualisation of plots.
+
+\section{Experimental Setup}
+The experimental design was based on statistical experimental planning in order to systematically evaluate the effects of the material and environmental technical properties of the various binder combinations. The division took place between mixture optimization performed as a Simplex experiment and process optimization performed according to a 22-factor experiment. The independent process parameters selected in the study were binder quantity and water ratio. This means that different binder combinations were controlled at two different combinations of binder amount and two different water ratios.
+
+\subsection{Hypotheses} The overall hypothesis is that it is possible to replace a part of cement or slag with CKD without significantly deteriorating the results.
+
+\subsection{Mixture optimization}
+In order to be able to determine the optimal mixture between the three different binder components, a simplex experiment was used, see Figure 6.
+A simplex experiment can be described according to the three different binders represented by the parameters X, Y and Z.
+
+Equation 1
+
+The equation spans a triangle where the corners are represented by a binder component in this case cement, slag and CKD. In the stripes of the triangle there is a mixture of two binder components and in the interior of the triangle there is a combination of all three components. No matter where you are on the triangle, the total amount of binder is constant but the mutual proportions vary. Since only slag or CKD does not act as a binder, a limited Simplex centroid experiment was designed, see Figure 7.
+
+To increase the resolution, one of the simplex experiments was performed as an augmented Simplex experiment, see Figure 8.
+
+ Some types of binder cannot be used as a single component as no curing starts, for example slag must be activated with a high pH. By introducing a restriction for this binder, for example to maximize the slag content or fly ash to 60\%, possible combinations are obtained.
+
+\subsection{Process control}
+
+By process control is meant the parameters that are controlled and changed during the production of the stability. The process parameters include, for example, the amount of binder, the water ratio of the dredged masses, the mixing time (work). The binder mixture in this case does not count as a process parameter but is determined by the simplex test.
+
+\subsubsection{Processes with two factors}
+
+In the simplest case where only the water ratio and binder content are to be varied, the process parameters can be used a 22-factor experiment. Here, two factors are tested, amount of binder and water ratio, on two levels, low and high, see Figure 9.
+
+This provides an opportunity to study the interplay between water ratio and binder quantity. In order to be able to combine mixing experiments with factor experiments, these can be combined, see Figure 10. By combining, for example, simplex experiments with a factor experiment, an optimization of the binder mixture can be made and a determination of how the mixing parameters affect the result. The result here can be compressive strength, permeability, leaching properties and so on.
+
+The results from an experimental setup according to Figure 10 can be reported as a traditional factor experiment or as a factor experiment in a simplex setup, see Figure 11.
+
+\subsection{Extra test setups}
+
+The results showed that the largest strength increase occurred with a mixture of 60\% slag and 40\% cement. Therefore, two additional rounds of testing were performed, ED 1 and ED 2, see Figure \ref{fig:12}, to determine the limits of the width that could be used from a strength perspective. These two additional experimental setups were designed as delimited simplex experiments. Experimental setup one (ED1) was designed to optimize the use of CKD and experimental setup two (ED2) was designed to optimize the use of slag. 
+
+The test points marked with as a black dot were additions to test the limitation of slag mixture. The experiments were designed to determine the limits of where the various binder components can contribute to an increase in the strength of the dredged masses. Figure 13 shows the different experimental setups and at which binder combinations where no strength growth could be observed.
+
+
+\begin{figure}
+	\centering
+		\includegraphics[scale=.75]{figs/Figure_01.jpg}
+	\caption{Photo showing the type of barrel used in the project. The size of the barrel means that a good stirring can be performed and in this way a homogeneous material is obtained for further testing. Photo by Per Lindh.}\label{fig:1}
+\end{figure}
+
+\begin{figure}
+	\centering
+		\includegraphics[scale=.75]{figs/Figure_02.jpg}
+	\caption{Photo showing mixing tool for homogenization of the dredged material. Photo by Per Lindh.}\label{fig:2}
+\end{figure}
+
+\begin{figure}
+	\centering
+		\includegraphics[width=8.5cm]{figs/Figure_03.jpg}
+	\caption{Histogram showing the two current water quotas determined according to SS-EN ISO 17892-1}\label{fig:3}
+\end{figure}
+
+Here it can be noted (Fig. \ref{fig:3}) that the standard deviation for the higher water ratio is higher, i.e. it is more difficult to maintain the same homogeneity for the higher water ratio. The actual dry substances were 31.3 and 37.3\%, respectively (SS-EN 12880?), See Figure 4.
+
+\begin{figure}
+	\centering
+		\includegraphics[width=8.5cm]{figs/Figure_04.jpg}
+	\caption{Histogram showing the proportion of the dry matter in the two mixtures in question.}\label{fig:4}
+\end{figure}
+
+\begin{figure}
+	\centering
+		\includegraphics[width=8.5cm]{figs/Figure_05.jpg}
+	\caption{Graph showing grain distribution in the soil material. The material is classified as a silty muddy sand, silty sand and sandy silt.}\label{fig:5}
+\end{figure}
+
+\begin{figure}
+	\centering
+		\includegraphics[width=8.5cm]{figs/Figure_06.jpg}
+	\caption{Graph showing the section representing all conceivable combinations of the three components. The possible binder combinations with three different binders are represented by a plane with three straight lines bordering the plane. The vertices represent a binder, 1.0 = 100\%.}\label{fig:6}
+\end{figure}
+
+\begin{figure}
+	\centering
+		\includegraphics[width=8.5cm]{figs/Figure_07.jpg}
+	\caption{The gray area shows delimited simplex centroid experiment. The delimitation is at 60\% slag and 60\% CKD, respectively. The black dots (7) correspond to the selected test dots. The red circle in the middle of the graph indicates a double attempt. When all the samples were performed as a double experiment, a total of 16 + 16 samples have been performed}\label{fig:7}
+\end{figure}
+
+\begin{figure}
+	\centering
+		\includegraphics[width=8.5cm]{figs/Figure_08.jpg}
+	\caption{Reinforced Simplex experiment for estimation of higher order interaction effects. The experimental points represented by x constitute extra experiments}\label{fig:8}
+\end{figure}
+
+\begin{figure}
+	\centering
+		\includegraphics[width=8.5cm]{figs/Figure_09.jpg}
+	\caption{An example of the $2^2$-factor experiment with the amount of binder and water ratio as constituent factors}\label{fig:9}
+\end{figure}
+
+\begin{figure}
+	\centering
+		\includegraphics[width=8.5cm]{figs/Figure_10.jpg}
+	\caption{Simplex experiments arranged after a $2^2$-factor experiment. The combined methodology provides both an optimal binder mix and an optimal amount of binder in relation to the process parameters.}\label{fig:10}
+\end{figure}
+
+\begin{figure}
+	\centering
+		\includegraphics[width=8.5cm]{figs/Figure_11.jpg}
+	\caption{$2^2$-factor experiments reported in a simplex set-up.}\label{fig:11}
+\end{figure}
+
+\begin{figure}
+	\centering
+		\includegraphics[width=8.5cm]{figs/Figure_12.jpg}
+	\caption{Graph showing different experiments performed with the factor combination low water ratio (LW) and low amount of binder (LB).}\label{fig:12}
+\end{figure}
+
+\begin{figure}
+	\centering
+		\includegraphics[width=8.5cm]{figs/Figure_13.jpg}
+	\caption{Graph showing test points and test points (recipe) where no strength growth could be detected. The combinations that did not show any increase in strength were probably due to a too low pH to activate the slag.}\label{fig:13}
+\end{figure}
+
+
+\section{Results and Discussion}
+\label{}
+
+Leaching appears to be the primary mechanism for TBT in surface leaching of the tested materials. Leaching means that leached amounts will decrease in the long run. It is unknown which leaching mechanisms become primary when the leaching phase is completed and which mass flows will prevail. The pH of mixtures containing cement / slag seems to be able to stabilize around 10–10.5 in the lab experiments. 
+
+On an unwashed material, the leaching can vary considerably between different recipes in the initial stage. It can also vary between different experiments on the same material. Over time, however, leaching seems to stabilize, which means that the differences between different recipes are reduced. 
+
+Recipes that contain cement / slag / CKD (60/20/20) give similar leaching as cement / slag (60/40), which was the recipe that was included in the pilot experiment. The addition of CKD contributes to a higher pH compared to cement / slag. At the same time, CKD seems to help keep leaching down somewhat, despite the material's alkaline effect on pH. Recipes with only cement / CKD give significantly higher leaching than cement / slag / CKD and cement / slag. Thus, it is the CKD / slag combination that is favorable together with cement.
+
+The leaching of TBT increases markedly at a higher amount of water in the surface leaching experiments, this despite the fact that the pH becomes somewhat less basic due to the buffering effect of seawater. Leaching of TBT is therefore affected not only by the pH value, but also by the leaching conditions (i.e. the ratio between leached surface and leachate amount). The preliminary hypothesis is that the diffusion gradient becomes stronger when the amount of water increases in relation to the surface, which drives the leaching of easily soluble substances. Graph simplex.
+
+\begin{figure}
+	\centering
+		\includegraphics[width=8.5cm]{figs/Figure_14.jpg}
+	\caption{Response area for leaching of TBT after the 2.25 days}\label{fig:14}
+\end{figure}
+
+\section{ Conclusion}\label{}
+
+\section{Acknowledgements}
+\label{}
+
+%\pagebreak
+\section{Bibliography}
+
+%\printcredits
+
+%% Loading bibliography style file
+%\bibliographystyle{model1-num-names}
+\bibliographystyle{cas-model2-names}
+
+% Loading bibliography database
+\bibliography{Lindh}
+
+\end{document}
+
