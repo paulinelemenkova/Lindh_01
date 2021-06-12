@@ -22,7 +22,8 @@
 
 %\usepackage[authoryear,longnamesfirst]{natbib}
 %\usepackage[authoryear]{natbib}
-\usepackage[numbers]{natbib}
+%\usepackage[numbers]{natbib}
+\usepackage{natbib}
 
 %%%Author definitions
 \def\tsc#1{\csdef{#1}{\textsc{\lowercase{#1}}\xspace}}
@@ -33,7 +34,10 @@
 \tsc{BEC}
 \tsc{DE}
 %%%
+\usepackage{float}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 \let\WriteBookmarks\relax
 \def\floatpagepagefraction{1}
@@ -41,7 +45,7 @@
 \shorttitle{Evaluation of different binder combinations of CKD}
 \shortauthors{Lindh and Lemenkova}
 
-\title[mode = title]{Evaluation of different binder combinations of CKD for s/s treatment of TBT contaminated sediments}                      
+\title[mode = title]{Evaluation of different binder combinations of CKD as a cement replacement material for s/s treatment of TBT contaminated sediments}                      
 %\tnotemark[1]
 
 %\tnotetext[1]{This document is the results of the research project funded by the}
@@ -103,7 +107,7 @@ The Swedish Geotechnical Institute (SGI) has evaluated the effect of the materia
 %\end{highlights}
 
 \begin{keywords}
-cement \sep cement kiln dust (CKD) \sep slag \sep geotechnical properties \sep binder components \sep stabilisation \sep durability
+cement \sep cement kiln dust (CKD) \sep slag \sep geotechnical properties \sep binder components \sep stabilisation \sep durability \sep tributyltin (TBT) \sep marine environment \sep stabilized/solidified (S/S) soils 
 \end{keywords}
 
 \maketitle
@@ -111,33 +115,50 @@ cement \sep cement kiln dust (CKD) \sep slag \sep geotechnical properties \sep b
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 
-\subsection{Background}
-Cement kiln dust (CKD) has a promising applications in building and construction sector for production of concrete. CKD is a fine-grained, solid, highly alkaline material that originates from the cement kiln exhaust gases as emissions during the cement production in rotary kilns \cite{BARNATHUNEK2018149}. The expanding experimental testing on CKD has resulted in more complex models on sub-grade behaviour as reflected in a greater number of relevant papers in civil engineering. CKD has a great potential in civil engineering works. 
-For example, using CKD significantly improves mechanical strength and increases resistance of the sub-grade soils. In turn, stabilisation of sub-grade soils decreases expenses for construction materials and costs of works. and satisfies the sustainable development goals \cite{ADEYANJU2020e00388}. The improved laboratory tests based on the computations and graphical approximations on sub-grade properties results in increasing knowledge of structure and processes in soils. 
+\subsection{Research aim}
+This paper explores the application of Cement kiln dust (CK for the improvement of the engineering construction works with regards of sub-grade soil. The objective of this study is to assess whether the replacement of a part of cement or slag by CKD is possible without deteriorating the quality of results. The study area is located in southern Sweden, Gothernburg (Fig. \ref{fig:0}).
 
-The amount of publications on cement structure related to the current needs in construction and civil engineering has been rising sharply over the last two decades which reflects the demand for more safe standards in earthwork constructions and building, e.g. \cite{SHOAIB2000371}, \cite{BERNAL2010898}, \cite{WANG2020103489}, \cite{ABDELGAWWAD20191218}, \cite{ABDELGAWWAD2021102479}. Weak soils and sub-grade can be stabilised by adding CKD using mechanical geochemical methods of mixing and treatment. The CKD added to stabilise soils improves physical and mechanical properties of samples. The addition of grinding dust to the cement matrix leads to an increase in strength of cement to a certain limit, ca. 30\% of waste \cite{RIBEIRO20093094}. For example, \cite{CHAUNSALI2011197} reported significant increase in compressive strength obtained for a CKD–slag mixture with 70\% of CKD and 30\% of slag at a water/binder ratio of 0.40. The CKD stabiliser added to soil samples increases their durability, reduces price of works, and can be easily used as an industrial cheap sub-product. 
+\subsection{Background}
+Cement kiln dust (CKD) has a promising applications in building and construction sector for production of concrete. CKD is a fine-grained, solid, highly alkaline material that originates from the cement kiln exhaust gases as emissions during the cement production in rotary kilns \citep{BARNATHUNEK2018149}. The expanding experimental testing on CKD has resulted in more complex models on sub-grade behaviour as reflected in a greater number of relevant papers in civil engineering. CKD has a great potential in civil engineering works. 
+For example, using CKD significantly improves mechanical strength and increases resistance of the sub-grade soils. In turn, stabilisation of sub-grade soils decreases expenses for construction materials and costs of works. and satisfies the sustainable development goals \citep{ADEYANJU2020e00388}. The improved laboratory tests based on the computations and graphical approximations on the sub-grade properties results in increasing knowledge of structure and processes in soils. 
+
+The amount of publications on cement structure related to the current needs in construction and civil engineering has been rising sharply over the last two decades which reflects the demand for more safe standards in earthwork constructions and building, e.g. \cite{SHOAIB2000371}, \cite{BERNAL2010898}, \cite{WANG2020103489}, \cite{ABDELGAWWAD20191218}, \cite{ABDELGAWWAD2021102479}. Weak soils and sub-grade can be stabilised by adding CKD using mechanical geochemical methods of mixing and treatment. 
+
+When CKD is added to soil samples, it improves their physical and mechanical properties through increase of stabilisation and resistivity. Adding grinding dust to the cement matrix leads to an increase in strength of cement to a certain limit, up to ca. 30\% \citep{RIBEIRO20093094}. Another case study \citep{CHAUNSALI2011197} reported significant increase in compressive strength obtained for a CKD–slag mixture with 70\% of CKD and 30\% of slag at a water/binder ratio of 0.40. The CKD stabiliser added to soil samples increases their durability, reduces price of works, and can be easily used as an industrial cheap sub-product. In general, CKD is classified as a hazardous industrial solid waste by-product. However, it can be used as a binder in processing materials or as a binary binder.
 
 Besides technical benefits from application of CKD as optimal solutions to improving the fresh and hardened properties of concrete, it has a rational environmental reasons enabling to reduce the effect of $CO_2$ in the construction industry. Concrete, produced from a mixture of cement, water and aggregates, is the second important construction material after clay. 
-Massive amounts of cement produced annually during construction works may lead to significant environmental pollutions by $CO_2$ emissions, as well as producing CKD as solid waste material \cite{NAJIM20145}. Replacing cement with CKD significantly reduces the negative effects on the environment such as air pollution \cite{BAGHERI2020101809} as well as present economic solutions in workflow optimization \cite{FAISAL2021105194}. Moreover, CKD demonstrated to be efficient for geochemical wastewater treatment and acting as good environmental alternative coagulant. The CKD has high pollutant removal efficiency for heavy metals in wastewater with various tested parameters of salinity, conductivity and turbidity of waters \cite{HASABALLAH2021}. 
+Massive amounts of cement produced annually during construction works may lead to significant environmental pollutions by $CO_2$ emissions, as well as producing CKD as solid waste material \citep{NAJIM20145}. 
 
-Thus CKD proved to be an optimal waste material that can be used for replacing the cement in order to increase its compressive strength and resistivity in constructions and environmentally effective material. Using CKD for improvement properties of weak soils with regard to compressive strength, resistivity, durability, economic cost and environmental sustainable development is the key goals for engineering and contruction works \cite{ALHOMIDY2017749}. 
+Replacing cement with CKD significantly reduces the negative effects on the environment, e.g. air contamination and pollution \citep{BAGHERI2020101809} as well as present economic solutions in workflow optimization \citep{FAISAL2021105194}. Moreover, CKD demonstrated to be efficient for geochemical wastewater treatment and acting as good environmental alternative coagulant. The CKD has high pollutant removal efficiency for heavy metals in wastewater with various tested parameters of salinity, conductivity and turbidity of waters \citep{HASABALLAH2021}. 
 
-The replacement of cement by different percentage proportions of CKD as varied fractions (0–40\%) has been comparatively tested in various studies assessing the temporal behaviour of the stabilised cement for certain time periods \cite{SHUBBAR2020101327}, \cite{GHAVAMI2021122918}, \cite{MAJDI2020105961}. Statistical analyses in these studies proved improved mechanical and durability properties of cement after stabilisation by the CKD. At the same time, the effects  of CKD on the hydration of cement strongly depends on the chemical and physical properties of CKD \cite{PEETHAMPARAN2008803}, which explain the need for additional experimental testing to gain more insights into understanding of the behavior of CKD as sub-grade stabilizers and their suitability as the cement replacements. 
+Thus CKD is an optimal industrial waste material that can be used for replacing cement. In this way it can be used to increase its compressive strength and resistivity in constructions. For instance, CKD together with red clay brick waste, and silica fume are optimal ingredients to synthesise unfired building bricks \cite{ABDELGAWWAD20191218}. Besides, its utilisation can decrease environmentally negative effects and contribute to the sustainability goals in industrial engineering. Using CKD for improvement properties of weak soils with regard to compressive strength, resistivity, durability, economic cost and environmental sustainable development is the key goals for engineering and contruction works \citep{ALHOMIDY2017749}. For example, as reported by \citep{YASERI2019592}, adding the CKD up to the optimum amount (45\%) to the geopolymer paste increases its resistivity, e.g. compressive strength. 
 
+\begin{figure}[h]
+	\centering
+		\includegraphics[width=8.5cm]{figs/Topo_SE.jpg}
+	\caption{Location of the study area. Map source: authors.}\label{fig:0}
+\end{figure}
 
-\cite{YASERI2019592}, 
-\cite{Taha}, \cite{BAGHRICHE2020e00386}, \cite{SILVA2015108}, \cite{VIANI201456}, \cite{LI2017459},
-\cite{ABDELGAWWAD20191218}, \cite{NOSJEAN202031}, \cite{SHAH2021}, \cite{ZAHRAN202094}, \cite{SUN2021123255},
-\cite{SAMI2021106357}, \cite{SHEN2020103571}, \cite{ZHANG2021128926}, \cite{RIMAL2019e00223}, \cite{FIERTAK2013278}, \cite{SUTCU2016185},  
+The replacement of cement by different percentage proportions of CKD as varied fractions (0–40\%) has been comparatively tested in various studies assessing the temporal behaviour of the stabilised cement for certain time periods (\cite{SHUBBAR2020101327}, \cite{GHAVAMI2021122918}, \cite{MAJDI2020105961}). Statistical analyses in these studies proved improved mechanical and durability properties of cement after stabilisation by the CKD. At the same time, the effects  of CKD on the hydration of cement strongly depends on the chemical and physical properties of CKD \citep{PEETHAMPARAN2008803}, which explain the need for additional experimental testing to gain more insights into understanding of the behavior of CKD as sub-grade stabilizers and their suitability as the cement replacements. 
 
+Experiments on other materials replacing cement are reported with a case studies of waste recycled glass and sand. For instance, the study by \cite{Taha} shown certain difference in compressive strength of concrete after adding recycled glass. Another case study performed by  \cite{BAGHRICHE2020e00386} shown the effects of added CKD on the physical and mechanical characteristics of the cement, which demonstrated the benefit of the CKD as an additive in cement mass increasing its mechanical tensile strength. Tensile strength behaviour of recycled aggregate concrete has further been assessed by \cite{SILVA2015108} with proved relationship between the tensile and compressive strength when incorporating recycled aggregates in concrete using predictive modelling. 
 
-\subsection{Research aim}
-This paper explores the application of CKD for the improvement of the engineering construction works with regards of sub-grade soil. The objective of this study is to assess whether the replacement of a part of cement or slag by CKD is possible without deteriorating the quality of results. 
+An example of adding asbestos containing wastes used in the production of magnesium phosphate cements is presented by \cite{VIANI201456} who reported the changed strength of the cement during formation of hydrated phases, crystalline and amorphous reaction products as a result of adding binders. Hence the hazardous wastes can be recycled which is a beneficial opportunity improving both technical properties of cement and a solution for environmental sustainability. Besides, the cement produced by the replaced recycled materials is advantageous for the industry, as it can be used at lower cost for the replacement of the actual commercial cement.
+
+Physical and mechanical properties of sub-grades and soils are recognised for their importance in impacting the physical structure of the constructions in civil engineering: surfaces, buildings, roads. In various sub-disciplines such as geotechnical engineering, computer science, geological and soil studies and data visualisation, modelling properties of soils and sub-grades became a focus of investigation in its own right  \cite{Lindh2004}, \cite{LI2017459}, \cite{Lemenkova202107}. The impact of varied environmental effects (temperature, external pressure, humidity) on the Earth surface can be assessed using 3D and 2D geological plotting and tabular data analysis by various statistical approaches (\cite{Lindh1999}, \cite{NOSJEAN202031}, \cite{Lemenkova202103}, \cite{ZAHRAN202094}). 
+
+Subgrades are complex structures with processes that are often controlled by their geochemical structure (e.g. weak soils). At the same time, subgrades are exposed to the external environmental effects. For instance, continuous exposure to moisture or humid environments facilitates the subsequent hydration to generate $Ca(OH)_2$, which is the reason for alkali leaching that can happen on the asphalt paved on a cement concrete \citep{SUN2021123255} and may lead to the deterioration of cement bridges. Besides, leaching tests of cement can be used in hazard risk assessment to estimate the release rate of radionuclides, because cementitious materials are suitable for safe disposal of radionuclides and contaminated wastes due to their mechanical, physical and chemical properties \citep{SAMI2021106357}. 
+
+Mechanical behavior of cement paste  under general loading conditions depends on its structural elastic and plastic properties and porosity that deteriorate under the impact of chemical leaching \citep{SHEN2020103571}. Nevertheless, the use of stabilized / solidified (S/S) soils and sediments as common construction raw materials may present environmental challenge. This is mainly caused by the possible risk of contaminant leaching which  includes potentially toxic metals (Pb, Cd and As) in cement and slag binders \citep{ZHANG2021128926}. Subdround improvement by additing cementitious additives such as CKD is an effective solution to stabilise a ground for construction of  infrastructure (buildings and roads) \cite{RIMAL2019e00223}. Testing several proportions of CKD for various periods results in variation in  compressive strength values in soils with added CKD. 
+
+So when assessing the applicability of CKD as cement replacement, we must rely on labor-intensive testing and monitoring of the results, measuring compressive strength of the affected samples, and selecting proper sampling techniques to obtain reliable information which can adequately represent the characteristics of cement based on interpretation of the modeling results (\cite{Lindh2001}, \cite{Lindh2003}). 
+
+Various methods exist in data processing and analysis with regards to the geotechnical measurements (\cite{Lindhetal2018}, \cite{FIERTAK2013278}, \cite{SUTCU2016185}). These include, for instance, computing grain size in asphalt samples using digital image analysis \citep{Kallen2014}, assessment of the durability of asphalt \citep{Kallen2016} by measuring the adherence between the stones and the bitumen using computer vision. The applications of geochemical methods and assessment of soil properties are pivotal for evaluation of geological characteristics together with hydro-geological  appraisals, geophysical methods or drilling \citep{SHAH2021}.
 
 \section{Experimental Setup}
 The experimental design was based on statistical experimental planning in order to systematically evaluate the effects of the material and environmental technical properties of the various binder combinations. The division took place between mixture optimization performed as a Simplex experiment and process optimization performed according to a 22-factor experiment. The independent process parameters selected in the study were binder quantity and water ratio. This means that different binder combinations were controlled at two different combinations of binder amount and two different water ratios.
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
 		\includegraphics[scale=.75]{figs/Figure_01.jpg}
 	\caption{Photo showing the type of barrel used in the project. The size of the barrel means that a good stirring can be performed and in this way a homogeneous material is obtained for further testing. Photo by Per Lindh.}\label{fig:1}
@@ -151,7 +172,7 @@ A simplex experiment can be described according to the three different binders r
 
 Equation 1
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
 		\includegraphics[scale=.75]{figs/Figure_02.jpg}
 	\caption{Photo showing mixing tool for homogenization of the dredged material. Photo by Per Lindh.}\label{fig:2}
@@ -166,8 +187,6 @@ To increase the resolution, one of the simplex experiments was performed as an a
 \subsection{Process control}
 
 By process control is meant the parameters that are controlled and changed during the production of the stability. The process parameters include, for example, the amount of binder, the water ratio of the dredged masses, the mixing time (work). The binder mixture in this case does not count as a process parameter but is determined by the simplex test.
-
-
 
 \subsubsection{Processes with two factors}
 
@@ -221,31 +240,31 @@ It can be noted (Fig. \ref{fig:3}) that the standard deviation for the higher wa
 	\caption{Reinforced Simplex experiment for estimation of higher order interaction effects. The experimental points represented by x constitute extra experiments}\label{fig:8}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
 		\includegraphics[width=8.5cm]{figs/Figure_09.jpg}
 	\caption{An example of the $2^2$-factor experiment with the amount of binder and water ratio as constituent factors}\label{fig:9}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
 		\includegraphics[width=8.5cm]{figs/Figure_10.jpg}
 	\caption{Simplex experiments arranged after a $2^2$-factor experiment. The combined methodology provides both an optimal binder mix and an optimal amount of binder in relation to the process parameters.}\label{fig:10}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
 		\includegraphics[width=8.5cm]{figs/Figure_11.jpg}
 	\caption{$2^2$-factor experiments reported in a simplex set-up.}\label{fig:11}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
 		\includegraphics[width=8.5cm]{figs/Figure_12.jpg}
 	\caption{Graph showing different experiments performed with the factor combination low water ratio (LW) and low amount of binder (LB).}\label{fig:12}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
 		\includegraphics[width=8.5cm]{figs/Figure_13.jpg}
 	\caption{Graph showing test points and test points (recipe) where no strength growth could be detected. The combinations that did not show any increase in strength were probably due to a too low pH to activate the slag.}\label{fig:13}
@@ -262,24 +281,25 @@ Recipes that contain cement / slag / CKD (60/20/20) give similar leaching as cem
 
 The leaching of TBT increases markedly at a higher amount of water in the surface leaching experiments, this despite the fact that the pH becomes somewhat less basic due to the buffering effect of seawater. Leaching of TBT is therefore affected not only by the pH value, but also by the leaching conditions (i.e. the ratio between leached surface and leachate amount). The preliminary hypothesis is that the diffusion gradient becomes stronger when the amount of water increases in relation to the surface, which drives the leaching of easily soluble substances. Graph simplex.
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
 		\includegraphics[width=8.5cm]{figs/Figure_14.jpg}
 	\caption{Response area for leaching of TBT after the 2.25 days}\label{fig:14}
 \end{figure}
 
-\section{Conclusion}\label{}
+\section{Conclusion}
+
+\section{Declaration of competing interest}
+The authors declare that they have no known competing financial interest or personal relationships that could have appeared to influence the work reported in this paper.
 
 \section{Acknowledgements}
 The project has been implemented by the support of Swedish Geotechnical Institute (SGI) and Arendal Project. We thank the two anonymous journal referees for the review and comments on this work.
-
-%\pagebreak
-\section{Bibliography}
 
 %\printcredits
 
 % Loading bibliography style file
 %\bibliographystyle{model1-num-names}
+%\bibliographystyle{model3-num--names}
 \bibliographystyle{cas-model2-names}
 %\bibliographystyle{elsarticle-num-names}
 %\bibliographystyle{elsarticle-num}
